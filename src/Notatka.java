@@ -14,9 +14,9 @@ public class Notatka {
 
     public Notatka(String tytulNotatki) {
         this.tytulNotatki = tytulNotatki;
-        tytulNotatki = "";
-        priorytet = false;
-        dataNotatki = new Date();
+        this.trescNotatki = "";
+        this.priorytet = false;
+        this.dataNotatki = new Date();
     }
 
     public void wypiszNotatke(){

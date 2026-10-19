@@ -8,6 +8,7 @@ public class Main {
 
         Notatka notatka1 = new Notatka(tytul, tresc, priorytet);
 
+        System.out.println("Podaj tytuł notatki: ");
         Scanner scanner = new Scanner(System.in);
         String tytul2 = scanner.nextLine().toString();
 
