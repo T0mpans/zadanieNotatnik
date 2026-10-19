@@ -19,5 +19,15 @@ public class Notatka {
         dataNotatki = new Date();
     }
 
-
+    public void wypiszNotatke(){
+        System.out.println("______________________");
+        if(priorytet==true){
+            System.out.println("Notatka WAŻNA! "+tytulNotatki);
+        }else{
+            System.out.println("Notatka "+tytulNotatki);
+        }
+        System.out.println(trescNotatki);
+        System.out.println(dataNotatki);
+        System.out.println("______________________");
+    }
 }
