@@ -5,11 +5,19 @@ public class Notatka {
     public boolean priorytet;
     public Date dataNotatki;
 
-    public Notatka(String tytulNotatki, String trescNotatki, boolean priorytet, Date dataNotatki) {
+    public Notatka(String tytulNotatki, String trescNotatki, boolean priorytet) {
         this.tytulNotatki = tytulNotatki;
         this.trescNotatki = trescNotatki;
         this.priorytet = priorytet;
-        this.dataNotatki = dataNotatki;
-        //dataNotatki.getDate();
+        this.dataNotatki = new Date();
     }
+
+    public Notatka(String tytulNotatki) {
+        this.tytulNotatki = tytulNotatki;
+        tytulNotatki = "";
+        priorytet = false;
+        dataNotatki = new Date();
+    }
+
+
 }
